@@ -3,37 +3,38 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .grid-sizer,
 .grid-item {
-  width: calc(33.333% - 5px);
-  margin-bottom: 5px;
+	width: calc(33.333% - 5px);
+	margin-bottom: 5px;
 }
 
 .grid-item {
-  float: left;
+	float: left;
 }
 
 .link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(theme('colors.slate.600'), theme('colors.slate.600'));
-  background-size: 0 2px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size .2s ease-in-out;
+	border-bottom-width: 0;
+	background-image: linear-gradient(transparent, transparent),
+		linear-gradient(theme("colors.slate.600"), theme("colors.slate.600"));
+	background-size: 0 2px;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 0.2s ease-in-out;
 }
 
 .link-underline:hover {
-  background-size: 100% 2px;
-  background-position: 0 100%
+	background-size: 100% 2px;
+	background-position: 0 100%;
 }
