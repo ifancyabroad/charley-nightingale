@@ -2,8 +2,7 @@
 
 import { ImageType } from "@/utils/enums";
 import { getImageData } from "@/utils/helpers";
-import Masonry from "masonry-layout";
-import { useEffect, useRef } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 interface IProps {
 	type: ImageType;
@@ -11,27 +10,16 @@ interface IProps {
 
 export default function Gallery({ type }: IProps) {
 	const images = getImageData(type);
-	const ref = useRef<HTMLDivElement>(null);
-
-	useEffect(() => {
-		if (ref && ref.current) {
-			new Masonry(ref.current, {
-				itemSelector: ".grid-item",
-				columnWidth: ".grid-sizer",
-				percentPosition: true,
-				gutter: 5,
-			});
-		}
-	}, []);
 
 	return (
-		<div ref={ref} className="grid" id="grid">
-			<div className="grid-sizer"></div>
-			{images.map((image, index) => (
-				<div className="grid-item" key={index}>
-					<img src={`/gallery${image.src}`} alt={image.name} />
-				</div>
-			))}
-		</div>
+		<ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}} >
+			<Masonry gutter="10px">
+				{images.map((image, index) => (
+					<div key={index}>
+						<img src={`/gallery${image.src}`} alt={image.name} />
+					</div>
+				))}
+			</Masonry>
+		</ResponsiveMasonry>
 	);
 }
