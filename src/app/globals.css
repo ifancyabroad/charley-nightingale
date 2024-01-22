@@ -33,22 +33,6 @@
 	}
 }
 
-.grid:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-.grid-sizer,
-.grid-item {
-	width: calc(33.333% - 5px);
-	margin-bottom: 5px;
-}
-
-.grid-item {
-	float: left;
-}
-
 .link-underline {
 	border-bottom-width: 0;
 	background-image: linear-gradient(transparent, transparent),
@@ -63,4 +47,9 @@
 .link-underline.active {
 	background-size: 100% 2px;
 	background-position: 0 100%;
+}
+
+.youtube-video {
+	aspect-ratio: 16 / 9;
+	width: 100%;
 }
