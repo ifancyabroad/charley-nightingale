@@ -1,6 +1,29 @@
 import { ImageType } from "@/utils/enums";
 import { IImage } from "@/utils/types";
 
+export const navigation = [
+	{
+		href: "/",
+		label: "Oils",
+	},
+	{
+		href: "/prints",
+		label: "Prints",
+	},
+	{
+		href: "/watercolours",
+		label: "Watercolours",
+	},
+	{
+		href: "/ceramics",
+		label: "Ceramics",
+	},
+	{
+		href: "/about",
+		label: "About",
+	},
+];
+
 export const images: Record<ImageType, IImage[]> = {
 	[ImageType.Ceramics]: [
 		{

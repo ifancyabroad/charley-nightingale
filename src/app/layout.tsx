@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { poppins } from "@/app/fonts";
 import Header from "@/components/Header";
-import { caveat } from "@/app/fonts";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -15,9 +16,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={caveat.className}>
+			<body className={poppins.className}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

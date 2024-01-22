@@ -1,4 +1,4 @@
-import { Caveat, Josefin_Sans } from "next/font/google";
+import { Caveat, Josefin_Sans, Poppins } from "next/font/google";
 
 export const caveat = Caveat({
 	weight: "400",
@@ -7,5 +7,10 @@ export const caveat = Caveat({
 
 export const josefin = Josefin_Sans({
 	weight: "300",
+	subsets: ["latin"],
+});
+
+export const poppins = Poppins({
+	weight: ["300", "400"],
 	subsets: ["latin"],
 });

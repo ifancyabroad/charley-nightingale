@@ -34,7 +34,8 @@
 	transition: background-size 0.2s ease-in-out;
 }
 
-.link-underline:hover {
+.link-underline:hover,
+.link-underline.active {
 	background-size: 100% 2px;
 	background-position: 0 100%;
 }
