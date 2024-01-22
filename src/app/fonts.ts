@@ -6,7 +6,7 @@ export const caveat = Caveat({
 });
 
 export const josefin = Josefin_Sans({
-	weight: "300",
+	weight: ["300", "400"],
 	subsets: ["latin"],
 });
 

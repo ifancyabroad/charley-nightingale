@@ -9,10 +9,12 @@ export default function Header() {
 	const pathname = usePathname();
 
 	return (
-		<header className="p-4">
+		<header className="p-4 mb-8">
 			<div className="container mx-auto px-4">
-				<h1 className="text-center text-6xl font-bold mb-4">Charles Nightingale</h1>
-				<h2 className={`${josefin.className} text-center text-2xl mb-8`}>Artist</h2>
+				<div className="header-image">
+					<h1 className={`${josefin.className} text-center text-6xl font-bold mb-4`}>Charles Nightingale</h1>
+					<h2 className={`${josefin.className} text-center font-thin text-2xl`}>Artist</h2>
+				</div>
 
 				<div className={`${caveat.className} flex justify-center items-center gap-16`}>
 					{navigation.map((item) => {
