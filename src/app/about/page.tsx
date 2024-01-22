@@ -27,7 +27,7 @@ export default async function About() {
 						</p>
 						<p className="mb-4">
 							In printmaking, as well as the idioms mentioned above, I produce prints featuring black
-							humour. Although I don't paint abstracts, I have a great love of colour and shape of an
+							humour. Although I don&apos;t paint abstracts, I have a great love of colour and shape of an
 							abstract nature which informs a large part of my ceramics output.
 						</p>
 					</div>
