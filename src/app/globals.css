@@ -12,7 +12,7 @@
 	}
 
 	.header-image {
-		@apply relative bg-[url('/gallery/watercolours/Dominique-and-Luke-on-the-shore-at-Biarritz-mod-for-IAS-min.jpg')] bg-cover bg-center bg-no-repeat p-20 flex flex-col justify-center items-center w-fit m-auto;
+		@apply relative bg-[url('/gallery/watercolours/Dominique-and-Luke-on-the-shore-at-Biarritz-mod-for-IAS-min.jpg')] bg-cover bg-center bg-no-repeat p-8 md:p-20 flex flex-col justify-center items-center md:w-fit m-auto;
 		border-radius: 50%;
 	}
 
