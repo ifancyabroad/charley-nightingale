@@ -19,7 +19,12 @@ export default function Gallery({ type }: IProps) {
 			<Masonry gutter="10px">
 				{images.map((image, index) => (
 					<div key={index} className="relative">
-						<LazyLoadImage src={`/gallery${image.src}`} alt={image.name} effect="blur" />
+						<LazyLoadImage
+							wrapperClassName="align-middle"
+							src={`/gallery${image.src}`}
+							alt={image.name}
+							effect="blur"
+						/>
 						<div className={`${josefin.className} image-backdrop`}>
 							<p>{image.name}</p>
 						</div>

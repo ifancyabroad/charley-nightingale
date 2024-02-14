@@ -10,10 +10,8 @@ const Gallery = dynamic(
 
 export default async function Prints() {
 	return (
-		<main>
-			<div className="container mx-auto px-4">
-				<Gallery type={ImageType.Prints} />
-			</div>
-		</main>
+		<div className="container mx-auto px-4">
+			<Gallery type={ImageType.Prints} />
+		</div>
 	);
 }
