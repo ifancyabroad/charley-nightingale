@@ -3,20 +3,20 @@
 import { navigation } from "@/utils/constants";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { caveat } from "@/app/fonts";
+import { josefin } from "@/app/fonts";
 import { useState } from "react";
 
 export function DesktopNavigation() {
 	const pathname = usePathname();
 
 	return (
-		<div className={`${caveat.className} hidden md:flex justify-center items-center gap-16`}>
+		<div className={`${josefin.className} font-light hidden md:flex justify-center items-center gap-16`}>
 			{navigation.map((item) => {
 				const active = pathname === item.href ? "active" : "";
 
 				return (
-					<Link key={item.label} className="text-2xl" href={item.href}>
-						<span className={`${active} link link-underline`}>{item.label}</span>
+					<Link key={item.label} className="text-xl" href={item.href}>
+						<span className={`${active} block link link-underline`}>{item.label}</span>
 					</Link>
 				);
 			})}
@@ -47,14 +47,16 @@ export function MobileNavigation() {
 			</div>
 			<div className={open ? "sidebar sidebar-open" : "sidebar"}>
 				<div className="float-right min-h-full w-[85%] bg-white px-10 pt-12 shadow-2xl">
-					<menu className={caveat.className}>
+					<menu className={`${josefin.className} font-light`}>
 						{navigation.map((item) => {
 							const active = pathname === item.href ? "active" : "";
 
 							return (
-								<li key={item.label} className="mb-8">
-									<Link onClick={closeMenu} className="text-4xl" href={item.href}>
-										<span className={`${active} link link-underline`}>{item.label}</span>
+								<li key={item.label} className="mb-12">
+									<Link onClick={closeMenu} className="text-2xl" href={item.href}>
+										<span className={`${active} inline-block link link-underline`}>
+											{item.label}
+										</span>
 									</Link>
 								</li>
 							);
