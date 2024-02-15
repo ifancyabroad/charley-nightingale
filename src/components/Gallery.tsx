@@ -3,8 +3,7 @@
 import { josefin } from "@/app/fonts";
 import { ImageType } from "@/utils/enums";
 import { getImageData } from "@/utils/helpers";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import Image from "next/image";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 interface IProps {
@@ -19,12 +18,7 @@ export default function Gallery({ type }: IProps) {
 			<Masonry gutter="10px">
 				{images.map((image, index) => (
 					<div key={index} className="relative">
-						<LazyLoadImage
-							wrapperClassName="align-middle"
-							src={`/gallery${image.src}`}
-							alt={image.name}
-							effect="blur"
-						/>
+						<Image className="align-middle" src={image.src} alt={image.name} placeholder="blur" />
 						<div className={`${josefin.className} image-backdrop`}>
 							<p>{image.name}</p>
 						</div>

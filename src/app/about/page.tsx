@@ -1,11 +1,13 @@
+import Image from "next/image";
 import { josefin } from "../fonts";
+import profilePic from "../../../public/bio-picture.jpg";
 
 export default async function About() {
 	return (
 		<div className="container mx-auto px-4">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
 				<figure className="w-full">
-					<img className="mb-1" src="/bio-picture.jpg" alt="Self Portrait" />
+					<Image className="mb-1" src={profilePic} alt="Self Portrait" placeholder="blur" />
 					<figcaption className="text-xs">
 						The self-portrait shows me in contemplative mood thinking of my life, past and future.
 					</figcaption>

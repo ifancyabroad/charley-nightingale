@@ -1,4 +1,6 @@
+import { StaticImageData } from "next/image";
+
 export interface IImage {
 	name: string;
-	src: string;
+	src: StaticImageData;
 }
