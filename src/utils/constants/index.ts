@@ -76,7 +76,7 @@ import dominiqueAndLukeOnTheShoreAtBiarritz from "../../../public/gallery/waterc
 import fiona from "../../../public/gallery/watercolours/Fiona-Copy-min.jpg";
 import futuristHouse from "../../../public/gallery/watercolours/Futurist-House-min.jpg";
 import grapesWineAndAFlagon from "../../../public/gallery/watercolours/Grapes-wine-and-a-flagon-min.jpg";
-import guineanSceneWithManInWhite from "../../../public/gallery/watercolours/Guinean-Scene-with-man-in-White-Large-min.jpg";
+import guineanSceneWithManInWhite from "../../../public/gallery/watercolours/Guinean-Scene-with-Man-in-White-Large-min.jpg";
 import hollyhockGarden from "../../../public/gallery/watercolours/Hollyhock-Garden-min.jpg";
 import inTheGroveAtFelixstowe from "../../../public/gallery/watercolours/In-the-Grove-at-Felixstowe-min.jpg";
 import lilies from "../../../public/gallery/watercolours/Lilies-min.jpg";
