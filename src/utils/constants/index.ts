@@ -12,7 +12,7 @@ import DSCF0478 from "../../../public/gallery/ceramics/DSCF0478-min.jpg";
 import DSCF0482 from "../../../public/gallery/ceramics/DSCF0482-min.jpg";
 import fathersDay from "../../../public/gallery/ceramics/Fathers-Day-min.jpg";
 import growthAndDecay from "../../../public/gallery/ceramics/growth-and-decay-min.jpg";
-import herissaPotAndSWIndian from "../../../public/gallery/ceramics/herissa-pot-and-sw-indian-min.jpg";
+import herissaPotAndSWIndian from "../../../public/gallery/ceramics/Herissa-pot-and-sw-indian-min.jpg";
 import incenseBurnerInActionScarva from "../../../public/gallery/ceramics/Incense-Burner-in-action-scarva-min.jpg";
 import natureAndNurture from "../../../public/gallery/ceramics/Nature-and-Nurture-s-min.jpg";
 import picture002 from "../../../public/gallery/ceramics/Picture-002-min.jpg";
