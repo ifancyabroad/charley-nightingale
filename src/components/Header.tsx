@@ -12,7 +12,7 @@ export default function Header() {
 				<div className="flex gap-4 flex-col items-center lg:flex-row lg:items-end lg:justify-between">
 					<div className="text-center lg:text-left">
 						<h1 className={`${josefin.className} text-2xl md:text-4xl`}>Charles Nightingale</h1>
-						<h2 className={`${josefin.className} text-xl md:text-2xl font-thin`}>Artist</h2>
+						<h2 className={`${josefin.className} text-xl md:text-2xl font-thin`}>Artist & Author</h2>
 					</div>
 
 					<DesktopNavigation />

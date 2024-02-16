@@ -5,7 +5,7 @@ import profilePic from "../../../public/bio-picture.jpg";
 export default async function About() {
 	return (
 		<div className="container mx-auto px-4">
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
 				<figure className="w-full">
 					<Image className="mb-1" src={profilePic} alt="Self Portrait" placeholder="blur" />
 					<figcaption className="text-xs">
@@ -14,6 +14,7 @@ export default async function About() {
 				</figure>
 
 				<div className="w-full">
+					<h3 className={`${josefin.className} text-2xl mb-4`}>Biography</h3>
 					<p className="mb-4">
 						I am an oil-painter, watercolourist, printmaker and ceramicist, living in Felixstowe, a
 						container port on the Suffolk coast in England, who exhibits with the Ipswich Art Society, the
@@ -25,15 +26,23 @@ export default async function About() {
 						leanings are more general – landscape and still life, with a recent interest in urban landscape,
 						which also figures heavily in my printmaking.
 					</p>
-					<p className="mb-4">
+					<p className="mb-12">
 						In printmaking, as well as the idioms mentioned above, I produce prints featuring black humour.
 						Although I don&apos;t paint abstracts, I have a great love of colour and shape of an abstract
 						nature which informs a large part of my ceramics output.
 					</p>
+					<h3 className={`${josefin.className} text-2xl mb-4`}>Contact</h3>
+					<p>
+						If you would like to get in touch with me, please email me at{" "}
+						<a href="mailto:info@charleynightingale.com" className="text-blue-600">
+							info@charleynightingale.com
+						</a>
+						.
+					</p>
 				</div>
 			</div>
 
-			<h2 className={`${josefin.className} text-4xl mb-4`}>Video Interview</h2>
+			<h3 className={`${josefin.className} text-2xl mb-4`}>Video Interview</h3>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 				<iframe
 					className="youtube-video"
