@@ -26,16 +26,15 @@ export default async function About() {
 						leanings are more general – landscape and still life, with a recent interest in urban landscape,
 						which also figures heavily in my printmaking.
 					</p>
-					<p className="mb-12">
+					<p className="mb-4">
 						In printmaking, as well as the idioms mentioned above, I produce prints featuring black humour.
 						Although I don&apos;t paint abstracts, I have a great love of colour and shape of an abstract
 						nature which informs a large part of my ceramics output.
 					</p>
-					<h3 className={`${josefin.className} text-2xl mb-4`}>Contact</h3>
 					<p>
 						If you would like to get in touch with me, please email me at{" "}
-						<a href="mailto:info@charleynightingale.com" className="text-blue-600">
-							info@charleynightingale.com
+						<a href="mailto:info@charleynightingale.co.uk" className="text-blue-600">
+							info@charleynightingale.co.uk
 						</a>
 						.
 					</p>
